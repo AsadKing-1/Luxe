@@ -1,10 +1,4 @@
 <h1 align="center">💎 Luxe</h1>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/React-18-TypeScript-Vite-blue?style=for-the-badge" alt="Tech stack">
-  <img src="https://img.shields.io/badge/ESLint-Strict-&-Clean-Code-green?style=for-the-badge" alt="Linting">
-</p>
-
 <p align="center">
   🚀 Элегантный и лёгкий сайт — современный старт-шаблон с чистым UI, выполненный на <strong>React + TypeScript + Vite</strong> с чёткой ESLint-настройкой.
 </p>
