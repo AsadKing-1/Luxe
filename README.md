@@ -1,69 +1,36 @@
-# React + TypeScript + Vite
+<h1 align="center">💎 Luxe</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <img src="https://img.shields.io/badge/React-18-TypeScript-Vite-blue?style=for-the-badge" alt="Tech stack">
+  <img src="https://img.shields.io/badge/ESLint-Strict-&-Clean-Code-green?style=for-the-badge" alt="Linting">
+</p>
 
-Currently, two official plugins are available:
+<p align="center">
+  🚀 Элегантный и лёгкий сайт — современный старт-шаблон с чистым UI, выполненный на <strong>React + TypeScript + Vite</strong> с чёткой ESLint-настройкой.
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 0. Что это за проект?
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+**Luxe** — это аккуратно продуманный веб-сайт с модульной структурой, быстрой загрузкой и строгим контролем качества кода. Идеально подходит как стартовая точка под любые веб-проекты: портфолио, лендинг, админка — с полноценным UI-ready интерфейсом и TypeScript-безопасностью.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 1. Основные особенности
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **React + TypeScript** — современный стек для UI с типами  
+- **Vite** — молниеносный сборщик и HMR  
+- **ESLint** — строгий контроль качества кода и предотвращение ошибок  
+- **Чистая структура** — однозначная навигация по файлам и компонентам  
+- **Настраиваемый UI** — легко расширить и адаптировать под нужды
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 2. Быстрый старт
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+```bash
+git clone https://github.com/AsadKing-1/Luxe.git
+cd Luxe
+npm install
+npm run dev
