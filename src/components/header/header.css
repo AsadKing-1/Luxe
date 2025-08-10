@@ -1,0 +1,128 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    z-index: 998;
+    padding: 1rem 2rem;
+    transition: all 0.3s ease;
+}
+
+.close-btn{
+    margin-left: 85%;
+    margin-top: 5%;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+.media-menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(15, 15, 35, 0.95);
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        text-align: center;
+        padding: 90px 20px 20px 20px;
+    }
+}
+.menu-btn{
+    display: none;
+    z-index: 10000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 2.2rem;
+    font-weight: 300;
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+
+.nav-menu a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+.nav-menu a:hover {
+    color: #8e9eab;
+    transform: translateY(-2px);
+}
+
+.nav-menu a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(135deg, #8e9eab, #bdc3c7);
+    transition: width 0.3s ease;
+}
+
+.nav-menu a:hover::after {
+    width: 100%;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.nav-icon {
+    color: #2c3e50;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background: rgba(142, 158, 171, 0.1);
+}
+
+.nav-icon:hover {
+    color: #8e9eab;
+    transform: scale(1.1);
+    background: rgba(142, 158, 171, 0.2);
+}
+
+.mobile-menu-btn{
+    display: none;
+}

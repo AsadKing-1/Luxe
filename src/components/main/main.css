@@ -1,0 +1,120 @@
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #ecf0f1 0%, #d5dbdb 100%);
+}
+
+.hero-content {
+    text-align: center;
+    color: #2c3e50;
+    z-index: 2;
+    max-width: 900px;
+    padding: 0 2rem;
+}
+
+.hero-title {
+    font-size: 4.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 200;
+    letter-spacing: 3px;
+    animation: fadeInUp 1s ease-out;
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+    animation: fadeInUp 1s ease-out 0.3s both;
+    color: #7f8c8d;
+    font-weight: 300;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 18px 50px;
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.4s ease;
+    animation: fadeInUp 1s ease-out 0.6s both;
+    box-shadow: 0 15px 35px rgba(44, 62, 80, 0.2);
+    border: 2px solid transparent;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 25px 50px rgba(44, 62, 80, 0.3);
+    background: transparent;
+    border: 2px solid #2c3e50;
+    color: #2c3e50;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.floating-element {
+    position: absolute;
+    opacity: 0.03;
+    animation: float 8s ease-in-out infinite;
+}
+
+.element-1 {
+    top: 15%;
+    left: 8%;
+    width: 120px;
+    height: 120px;
+    background: #34495e;
+    border-radius: 50%;
+    animation-delay: 0s;
+}
+
+.element-2 {
+    top: 60%;
+    right: 12%;
+    width: 80px;
+    height: 80px;
+    background: #8e9eab;
+    border-radius: 10px;
+    animation-delay: 3s;
+}
+
+.element-3 {
+    bottom: 25%;
+    left: 15%;
+    width: 60px;
+    height: 60px;
+    background: #bdc3c7;
+    transform: rotate(45deg);
+    animation-delay: 6s;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-30px) rotate(180deg);
+    }
+}
